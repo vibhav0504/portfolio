@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vibhav Yadav-Portfolio</title>
+    <link rel="stylesheet" href="index.css" />
+    
+  </head>
+  <body>
+    <div class="container">
+      <div class="navbar">
+        <ul>
+          <li class="item"><a href="#home">Home</a></li>
+          <li class="item"><a href="#about">About Us</a></li>
+          <li class="item"><a href="#services">Project</a></li>
+          <li class="item"><a href="#contact">Contact us</a></li>
+        </ul>
+      </div>
+      <div class="name">Vibhav Yadav</div>
+    </div>
+    <section id="home">
+      <span style="font-size: 50px">Hello👋</span>
+      <div class="text">
+        <strong
+          >Hey! It's Me
+          <em style="color: grey; font-size: 60px">Vibhav Yadav.</em></strong
+        >
+        <strong>
+          <br />
+          <strong style="font-size: 60px">I am a:</strong
+          ><span style="color: gray; font-size: 60px" class="sec-text">
+            Web Developer</span
+          ></strong
+        >
+        <br />
+        <button class="btn">Project</button>
+        <button class="btn">Contact</button>
+      </div>
+      <div class="img">
+        <img
+          src="Profile.jpeg"
+          style="height: 400px; width: 300px; border-radius: 50%"
+          alt="My-Photo"
+        />
+      </div>
+    </section>
+    <section id="about">
+      <div class="intro">
+        <h2 style="color: blue; font-size: 70px; margin: 50px;">
+          <em>Let's see some Information About me):</em>
+        </h2>
+        <div class="myinfo">
+          <h3>
+            <strong style="font-size: 50px; margin:30px ;">Introduction</strong>
+          </h3>
+          <div class="bio">
+            <em
+              >I Lives in Kanpur.
+              <strong>
+                My Date of Birth is April 5,2004 I completed my High-School &
+                Intermediate from B.N.S.D.Shiksha Niketan.</strong
+              ></em
+            >
+            <span
+              >Currently,I am in Harcourt Butler Technical University. Which is
+              present in Kanpur.I am pursuing my B.tech from Information
+              Technology .I am learning web development .I learned</span
+            >
+            <strong
+              >HTML,CSS,JavaScript,TYpeScript,React Js. I have basic knowledge
+              of C,C++,Python</strong
+            >
+          
+        </div>
+      </div>
+    </section>
+    <script>
+      const text = document.querySelector(".sec-text");
+
+      const textLoad = () => {
+        setTimeout(() => {
+          text.textContent = "Student";
+        }, 0);
+
+        setTimeout(() => {
+          text.textContent = " Coder";
+        }, 2000);
+      };
+
+      textLoad();
+      setInterval(textLoad, 4000);
+    </script>
+  </body>
+</html>
